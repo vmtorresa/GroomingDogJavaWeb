@@ -46,11 +46,11 @@ public class Consultas extends Conexion {
         System.out.println(co.autenticacion("lolo", "lolo123"));
     }*/
 
-    public boolean registrar(String documento, String nombre, String apellido, String correo, String tipoId, String nacimiento, String usuario, String password, String rol) {
+    public boolean registrar(String documento, String nombre, String apellido, String correo, String tipoId, String nacimiento) {
         PreparedStatement pst = null;
         try {
-            String consulta = "insert into persona (identifPersona, nombPersona, apellPersona, emailPersona, tipoIdentifPerson, FechaNacimPers, usuarioPersona, passwordPersona, rolPersona)"
-                    + "" + "values (?,?,?,?,?,?,?,?,?)";
+            String consulta = "insert into persona (identifPersona, nombPersona, apellPersona, emailPersona, tipoIdentifPerson, FechaNacimPers)"
+                    + "" + "values (?,?,?,?,?,?)";
 
             pst = getConexion().prepareStatement(consulta);
             pst.setString(1, documento);
@@ -59,9 +59,6 @@ public class Consultas extends Conexion {
             pst.setString(4, correo);
             pst.setString(5, tipoId);
             pst.setString(6, nacimiento);
-            pst.setString(7, usuario);
-            pst.setString(8, password);
-            pst.setString(9, rol);
 
             if (pst.executeUpdate() == 1) {
                 return true;
@@ -88,7 +85,7 @@ public class Consultas extends Conexion {
         Consultas co = new Consultas();
         System.out.println(co.registrar("5", "Paula", "Acosta", "pacosta@correo.com", "cedula", "2005-05-08", "pacosta", "555555", "paseador"));
     }*/
-    public boolean eliminar(String documento){
+    public boolean inactivar(String documento){
         PreparedStatement pst = null;
         try {
             String consulta = "delete from persona where identifPersona = ?";
