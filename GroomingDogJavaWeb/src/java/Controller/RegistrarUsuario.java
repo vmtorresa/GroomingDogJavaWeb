@@ -39,13 +39,12 @@ public class RegistrarUsuario extends HttpServlet {
         String emailPersona =request.getParameter("emailPersona");
         String tipoIdentifPerson =request.getParameter("tipoIdentifPerson");
         String fechaNacimPers =request.getParameter("fechaNacimPers");
-        String usuarioPersona =request.getParameter("usuarioPersona");
-        String passwordPersona =request.getParameter("passwordPersona");
-        String rolPersona =request.getParameter("rolPersona");
+        String domicilioPersona =request.getParameter("domicilioPersona");
+        String telefonoPersona =request.getParameter("telefonoPersona");
         
         Consultas co = new Consultas ();
-        if(co.registrar(identifPersona, nombPersona, apellPersona, emailPersona, tipoIdentifPerson, fechaNacimPers, usuarioPersona, passwordPersona, rolPersona)){
-        response.sendRedirect("index.jsp");
+        if(co.registrar(identifPersona, nombPersona, apellPersona, emailPersona, tipoIdentifPerson, fechaNacimPers, domicilioPersona, telefonoPersona)){
+        response.sendRedirect("rolPersona.jsp");
         
         }else{
             response.sendRedirect("registro.jsp");

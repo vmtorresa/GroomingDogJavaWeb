@@ -13,10 +13,10 @@
     </head>
     <body>
     <center><h1>GROOMINGDOG</h1></center>
-        <form action="eliminar" method="post">
+        <form action="inactivar" method="post">
             <label>Eliminar usuario </label>
             <input type="text" name="identifPersona" placeholder="Digite identificación" required><br>
-            <input type="submit" value="Eliminar">
+            <input type="submit" value="Inactivar">
         </form>
         <br>
         

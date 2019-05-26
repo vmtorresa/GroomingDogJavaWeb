@@ -3,15 +3,16 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/OSP2019/Downloads/SENA/GroomingDogVictor-eliminar/web/registro.jsp</file>
-            <file>file:/C:/Users/OSP2019/Downloads/SENA/GroomingDogVictor-eliminar/src/java/Controller/InicioSesion.java</file>
-            <file>file:/C:/Users/OSP2019/Downloads/SENA/GroomingDogVictor-eliminar/src/java/Controller/EliminarUsuario.java</file>
-            <file>file:/C:/Users/OSP2019/Downloads/SENA/GroomingDogVictor-eliminar/src/java/Controller/RegistrarUsuario.java</file>
-            <file>file:/C:/Users/OSP2019/Downloads/SENA/GroomingDogVictor-eliminar/web/WEB-INF/web.xml</file>
-            <file>file:/C:/Users/OSP2019/Downloads/SENA/GroomingDogVictor-eliminar/web/eliminarUsuario.jsp</file>
-            <file>file:/C:/Users/OSP2019/Downloads/SENA/GroomingDogVictor-eliminar/web/index.jsp</file>
-            <file>file:/C:/Users/OSP2019/Downloads/SENA/GroomingDogVictor-eliminar/src/java/Model/Consultas.java</file>
-            <file>file:/C:/Users/OSP2019/Downloads/SENA/GroomingDogVictor-eliminar/web/menu.jsp</file>
+            <file>file:/C:/Users/OSP2019/Downloads/SENA/GitHubJava/GroomingDogJavaWeb/web/usuarioActivaNick.jsp</file>
+            <file>file:/C:/Users/OSP2019/Downloads/SENA/GitHubJava/GroomingDogJavaWeb/src/java/Model/Conexion.java</file>
+            <file>file:/C:/Users/OSP2019/Downloads/SENA/GitHubJava/GroomingDogJavaWeb/web/registro.jsp</file>
+            <file>file:/C:/Users/OSP2019/Downloads/SENA/GitHubJava/GroomingDogJavaWeb/src/java/Controller/SeleccionarRol.java</file>
+            <file>file:/C:/Users/OSP2019/Downloads/SENA/GitHubJava/GroomingDogJavaWeb/src/java/Controller/InicioSesion.java</file>
+            <file>file:/C:/Users/OSP2019/Downloads/SENA/GitHubJava/GroomingDogJavaWeb/web/WEB-INF/web.xml</file>
+            <file>file:/C:/Users/OSP2019/Downloads/SENA/GitHubJava/GroomingDogJavaWeb/src/java/Model/Consultas.java</file>
+            <file>file:/C:/Users/OSP2019/Downloads/SENA/GitHubJava/GroomingDogJavaWeb/web/rolPersona.jsp</file>
+            <file>file:/C:/Users/OSP2019/Downloads/SENA/GitHubJava/GroomingDogJavaWeb/src/java/Controller/UsuarioActivaNick.java</file>
+            <file>file:/C:/Users/OSP2019/Downloads/SENA/GitHubJava/GroomingDogJavaWeb/src/java/Controller/RegistrarUsuario.java</file>
         </group>
     </open-files>
 </project-private>

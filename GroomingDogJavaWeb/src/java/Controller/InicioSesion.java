@@ -21,14 +21,17 @@ public class InicioSesion extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         PrintWriter out = response.getWriter();
         
-        String usuario =request.getParameter("usuario");
-        String password =request.getParameter("password");
+        String Estado = request.getParameter("estado");
+        String Usuario =request.getParameter("usuario");
+        String Password =request.getParameter("password");
         
         Consultas co = new Consultas();
-       if(co.autenticacion(usuario, password)){
+       if(co.autenticacion(Estado, Usuario, Password)){
            HttpSession objetosesion=request.getSession(true);
-           objetosesion.setAttribute("usuario",usuario);
-           objetosesion.setAttribute("password",password);
+           
+           objetosesion.setAttribute("estado",Estado);
+           objetosesion.setAttribute("usuario",Usuario);
+           objetosesion.setAttribute("password",Password);
            response.sendRedirect("menu.jsp");
     }else{
            response.sendRedirect("index.jsp");

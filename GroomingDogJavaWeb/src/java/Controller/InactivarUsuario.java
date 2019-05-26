@@ -17,7 +17,7 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author OSP2019
  */
-public class EliminarUsuario extends HttpServlet {
+public class InactivarUsuario extends HttpServlet {
 
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
@@ -27,7 +27,7 @@ public class EliminarUsuario extends HttpServlet {
         String identifPersona =request.getParameter("identifPersona");
         
         Consultas co = new Consultas ();
-        if(co.eliminar(identifPersona)){
+        if(co.inactivar(identifPersona)){
         response.sendRedirect("menu.jsp");
         
         }else{
